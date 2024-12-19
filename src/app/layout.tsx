@@ -1,18 +1,12 @@
-import type { Metadata } from "next";
-import "@/globals.css";
+import type { Metadata } from 'next'
+import '@/globals.css'
 
-interface Props extends Children {
-  params: { lang: string }
-} 
-
-export default function RootLayout({ children, params: { lang } }: Readonly<Props>) {
+export default function RootLayout({ children }: Readonly<Children>) {
   return (
-    <html lang={lang}>
-      <body className={`antialiased`}>
-        {children}
-      </body>
+    <html lang="en">
+      <body className={`antialiased`}>{children}</body>
     </html>
-  );
+  )
 }
 
 export const metadata: Metadata = {

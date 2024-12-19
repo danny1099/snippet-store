@@ -1,8 +1,8 @@
 
 export default function Home() {
   return (
-    <main>
-      Home | Snippet Store
-    </main>
+    <section>
+      <h1>Home | Snippet Store</h1>
+    </section>
   );
 }
